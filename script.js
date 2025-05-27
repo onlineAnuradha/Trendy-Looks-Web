@@ -72,23 +72,6 @@ document.querySelectorAll('img').forEach(img => {
     img.style.transition = 'opacity 0.3s ease-in';
 });
 
-// Category navigation functionality
-const categoryItems = document.querySelectorAll('.category-item');
-
-categoryItems.forEach(item => {
-    item.addEventListener('click', () => {
-        // Remove active class from all items
-        categoryItems.forEach(i => i.style.backgroundColor = '');
-        
-        // Add active state to clicked item
-        item.style.backgroundColor = 'rgba(255, 107, 53, 0.1)';
-        
-        // In a real application, this would trigger category filtering
-        const category = item.querySelector('span').textContent;
-        console.log(`Selected category: ${category}`);
-    });
-});
-
 // Add smooth scrolling for category navigation
 const categoryScroll = document.querySelector('.category-scroll');
 let isScrolling = false;
@@ -96,6 +79,7 @@ let startX;
 let scrollLeft;
 
 categoryScroll.addEventListener('mousedown', (e) => {
+    if (e.target.closest('.subcategory-dropdown')) return;
     isScrolling = true;
     startX = e.pageX - categoryScroll.offsetLeft;
     scrollLeft = categoryScroll.scrollLeft;
