@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - TrendyLooks</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="category-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="../index.html"><h1>TrendyLooks</h1></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for items...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <nav class="category-nav">
+        <div class="category-scroll">
+            <div class="category-item">
+                <a href="men.html">
+                    <button>
+                        <i class="fas fa-tshirt"></i>
+                        <span>Men</span>
+                    </button>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="women.html">
+                    <button>
+                        <i class="fas fa-female"></i>
+                        <span>Women</span>
+                    </button>
+                </a>
+            </div>
+            <div class="category-item">
+                <button class="active">
+                    <i class="fas fa-gem"></i>
+                    <span>Accessories</span>
+                </button>
+            </div>
+            <div class="category-item">
+                <a href="electronics.html">
+                    <button>
+                        <i class="fas fa-laptop"></i>
+                        <span>Electronics</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <h1>Accessories</h1>
+        <p>Complete your look with our stylish collection of accessories</p>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="filter-group">
+                <select id="price-filter" class="filter-select">
+                    <option value="all">All Prices</option>
+                    <option value="0-50">Under $50</option>
+                    <option value="50-100">$50 - $100</option>
+                    <option value="100-200">$100 - $200</option>
+                    <option value="200-">$200 & Above</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select id="sort-by" class="sort-select">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Content -->
+    <section class="category-content">
+        <div class="product-count"></div>
+        <div class="category-grid">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TrendyLooks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="category.js"></script>
+</body>
+</html> 
